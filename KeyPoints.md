@@ -4,3 +4,7 @@
 
 # ==[Day 04：神經網路的效能調校(Performance Tuning)](https://ithelp.ithome.com.tw/articles/10234059)==
 
+# [Day 11：卷積神經網路(CNN) 剖析與視覺化](https://ithelp.ithome.com.tw/articles/10235547)
+剖析
+- 卷積(Convolution)使用的卷積核(kernel)並不是固定的，他們的矩陣值是經由訓練得到的最佳解。
+- 抽象化(Abstraction)：透過卷積使影像抽象化，可逐漸把輪廓顯現出來，但不是每個卷積都有效。
