@@ -7,3 +7,5 @@ PetImages
 data
 *__pycache__/
 *.npy
+*.tar.gz
+ImageSegmentData
