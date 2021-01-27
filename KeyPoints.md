@@ -52,3 +52,5 @@ $\beta$：控制規模偏移(Shift)
 
 第三種模型：使用兩個資料集訓練兩個網路，但個別作 Batch Normalization，不共享權值。
 ![](https://ithelp.ithome.com.tw/upload/images/20200921/20001976HadnqE6LS0.png)
+
+# [Day 22：Tensorflow Dataset 相關用法整理](https://ithelp.ithome.com.tw/articles/10241789)
