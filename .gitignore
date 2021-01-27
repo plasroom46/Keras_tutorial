@@ -9,3 +9,4 @@ data
 *.npy
 *.tar.gz
 ImageSegmentData
+glove
