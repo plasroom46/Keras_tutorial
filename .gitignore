@@ -11,3 +11,4 @@ data
 ImageSegmentData
 glove
 aclImdb
+image_classifier

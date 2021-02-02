@@ -78,3 +78,13 @@ $\beta$：控制規模偏移(Shift)
   -  通常我們要訂定特定策略，就繼承基礎的代理人類別(base agent class)，在衍生的類別中，撰寫策略邏輯。
 
 最後撰寫成一個類別或一段程式，稱之為【實驗】(Experiment)，用來建立環境、代理人兩個物件，讓系統動起來。
+
+# [Day 30：取代資料科學家 -- AutoKeras 入門](https://ithelp.ithome.com.tw/articles/10246684)
+
+AutoKeras 就是以 Keras 風格撰寫的 AutoML 套件，目前提供三類功能：
+
+- 影像分類與迴歸(Image Classification and Regression)
+- 文字分類與迴歸(Text Classification and Regression)
+- 結構化資料分類與迴歸(Structured Data Classification and Regression)：即一般的表格資料，如 CSV、Excel、資料庫...等二維表格資料。
+
+近期還會擴充 Time Series Forcasting, Object Detection, Image Segmentation 相關功能。
