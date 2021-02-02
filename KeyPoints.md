@@ -54,3 +54,27 @@ $\beta$：控制規模偏移(Shift)
 ![](https://ithelp.ithome.com.tw/upload/images/20200921/20001976HadnqE6LS0.png)
 
 # [Day 22：Tensorflow Dataset 相關用法整理](https://ithelp.ithome.com.tw/articles/10241789)
+
+# [Day 28：從直覺的角度初探強化學習](https://ithelp.ithome.com.tw/articles/10245605)
+
+### 強化學習機制
+![](https://ithelp.ithome.com.tw/upload/images/20200927/2000197639yFZJUioG.png)
+- 代理人(Agent)：也就是遊戲中的玩家(Player)，他主要與環境互動，根據當時的狀態(State)以及之前得到的獎勵或懲罰，決定下一步的行動。
+- 環境(Environment)：會根據代理人的行動(Action)，給予立即的獎勵或懲罰，統稱為獎勵(Reward)。
+- 狀態(State)：也稱為觀察(Observation)，有時候代理人只能觀察到局部的狀態，例如，樸克牌遊戲21點(Black Jack)，莊家有一張牌是蓋住的，玩家是看不到。
+
+### 簡單的強化學習架構
+![](https://ithelp.ithome.com.tw/upload/images/20200928/20001976o1UTIJBIap.png)
+
+採取物件導向設計(OOP)，總共有兩個類別，其職責(方法)如下：
+
+- 環境(Environment)：類似遊戲本身。
+  - Init (初始化)：需定義狀態空間(State Space)、獎勵(Reward)辦法、行動空間(Action Space)、狀態轉換(State Transition definition)。
+  - Reset (重置)：回合(Episode)結束時，需重新開始，重置所有變數。
+  - Step (步驟)：代理人行動後，會驅動下一步，環境會更新狀態，給予獎勵，並判斷回合是否結束及勝負。
+  - Render (渲染)：更新畫面顯示。
+- 代理人(Agent)：類似玩家。
+  -  Act (行動)：代理人依據既定的策略以及面臨的狀態，採取行動，例如上、下、左、右。
+  -  通常我們要訂定特定策略，就繼承基礎的代理人類別(base agent class)，在衍生的類別中，撰寫策略邏輯。
+
+最後撰寫成一個類別或一段程式，稱之為【實驗】(Experiment)，用來建立環境、代理人兩個物件，讓系統動起來。
